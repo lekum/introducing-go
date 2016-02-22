@@ -5,6 +5,8 @@ import "alex/math"
 
 func main() {
 	xs := []float64{1, 2, 3, 4, 5}
-	avg := math.Average(xs)
-	fmt.Println(avg)
+	fmt.Println("Series:", xs)
+	fmt.Println("Average:", math.Average(xs))
+	fmt.Println("Min:", math.Min(xs))
+	fmt.Println("Max:", math.Max(xs))
 }
