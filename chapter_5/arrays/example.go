@@ -11,16 +11,9 @@ func main() {
 	x[4] = 83
 
 	var total float64 = 0
-	for i := 0; i < 5; i++ {
-		total += x[i]
-	}
-
-	fmt.Println(total / float64(len(x)))
-
-	total = 0
 	for i, value := range x {
 		fmt.Println("Position:", i, "Value:", value)
 		total += value
 	}
-	fmt.Println(total / float64(len(x)))
+	fmt.Println("Average:", total/float64(len(x)))
 }
