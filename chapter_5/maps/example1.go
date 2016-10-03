@@ -29,4 +29,12 @@ func main() {
 		"F":  "Fluorine",
 		"Ne": "Neon",
 	}
+
+	for k, v := range elements {
+		fmt.Println(k, "->", v)
+	}
+
+	if el, ok := elements["Be"]; ok {
+		fmt.Println(el)
+	}
 }
